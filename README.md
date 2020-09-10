@@ -4,14 +4,14 @@ http、api接口监控系统,可监控各种http请求，支持header、data设�
 [测试地址](http://123.206.77.88:8080) 管理密码123
 
 ## 界面
-![image](https://raw.githubusercontent.com/cnlh/httpMonitor/master/img1.png)
-![image](https://raw.githubusercontent.com/cnlh/httpMonitor/master/img2.png)
+![image](https://raw.githubusercontent.com/saber110/httpMonitor/master/img1.png)
+![image](https://raw.githubusercontent.com/saber110/httpMonitor/master/img2.png)
 ## 安装
 
 1. 安装本系统
 
 ```
-go get github.com/cnlh/httpMonitor
+go get github.com/saber110/httpMonitor
 ```
 
 2. 安装beego

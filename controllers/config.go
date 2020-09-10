@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/cnlh/httpMonitor/lib"
+	"github.com/saber110/httpMonitor/lib"
 )
 
 type ConfigController struct {

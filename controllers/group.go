@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/cnlh/httpMonitor/models"
+	"github.com/saber110/httpMonitor/models"
 )
 
 type GroupController struct {

@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/cnlh/httpMonitor/lib"
+	"github.com/saber110/httpMonitor/lib"
 )
 
 type LoginController struct {

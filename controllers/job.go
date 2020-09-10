@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"github.com/cnlh/httpMonitor/lib"
-	"github.com/cnlh/httpMonitor/models"
+	"github.com/saber110/httpMonitor/lib"
+	"github.com/saber110/httpMonitor/models"
 )
 
 type JobController struct {
