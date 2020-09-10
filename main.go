@@ -6,9 +6,9 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
-	"github.com/cnlh/httpMonitor/lib"
-	_ "github.com/cnlh/httpMonitor/models"
-	_ "github.com/cnlh/httpMonitor/routers"
+	"github.com/saber110/httpMonitor/lib"
+	_ "github.com/saber110/httpMonitor/models"
+	_ "github.com/saber110/httpMonitor/routers"
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 )
