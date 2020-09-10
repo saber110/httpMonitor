@@ -33,7 +33,8 @@ go build
 
 5. 初始化数据库
 ```
-./httpMonitor -orm syncdb
+go run main.go orm syncdb
+./httpMonitor orm syncdb
 ```
 
 6. 设置系统管理密码
