@@ -32,6 +32,7 @@ var pipe = &sync.Pool{
 func New(method, url, data string) (rs *req) {
 	rs = pipe.Get().(*req)
 	log.Println("Body : ", data)
+	log.Println("Method : ", method)
 	body := strings.NewReader(data)
 	rs.request, _ = http.NewRequest(method, url, body)
 	rs.client.Timeout = 10 * time.Second //默认10s
