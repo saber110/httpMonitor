@@ -46,7 +46,7 @@ func (r *req) SetOvertime(overtime int) {
 
 //为req对象设置header
 func (r *req) SetHeader(header string) {
-	headers := strings.Split(header, "\n") //行拆分
+	headers := strings.Split(header, "\r\n") //行拆分
 	for _, v := range headers {
 		val := strings.Split(v, ":") //分开键和值
 		if len(val) != 2 {
