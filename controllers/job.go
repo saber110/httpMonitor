@@ -45,7 +45,9 @@ func (self *JobController) Add() {
 			ErrTimes:       self.GetIntNoErr("ErrTimes"),
 			NoticeInterval: self.GetIntNoErr("NoticeInterval"),
 		}
+		log.Println("获取到的数据: ", job.Data)
 		isTest := self.GetBoolNoErr("test", false)
+		// 任务正确性测试
 		if isTest {
 			self.Data["json"] = lib.TestJob(&job)
 			self.ServeJSON()
