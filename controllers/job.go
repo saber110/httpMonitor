@@ -3,6 +3,7 @@ package controllers
 import (
 	"github.com/saber110/httpMonitor/lib"
 	"github.com/saber110/httpMonitor/models"
+	"log"
 )
 
 type JobController struct {
