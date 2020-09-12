@@ -120,7 +120,6 @@ func TestJob(job *models.JobDetail) map[string]interface{} {
 	isPass := false
 	start := time.Now()
 	r := New(job.Method, job.Url, job.Data)
-	log.Println("请求数据：", r)
 	if job.Header != "" {
 		r.SetHeader(job.Header)
 	}
