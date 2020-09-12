@@ -56,8 +56,8 @@ func (r *req) SetHeader(header string) {
 
 //执行请求，并返回状态码、内容、错误信息
 func (r *req) Do() (int, string, error) {
-	s, _ := ioutil.ReadAll(r.request.Body)
-	log.Println("请求数据：", s)
+	s, _ := ioutil.ReadAll(r.Body) //把  body 内容读入字符串 s
+    fmt.Fprintf(w, "%s", s)        //在返回页面中显示内容。
 	resp, err := r.client.Do(r.request)
 	if err != nil {
 		return -1, "请求执行出错", err
