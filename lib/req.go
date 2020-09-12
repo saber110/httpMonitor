@@ -31,6 +31,7 @@ var pipe = &sync.Pool{
 //new一个req对象，并初始化默认数据
 func New(method, url, data string) (rs *req) {
 	rs = pipe.Get().(*req)
+	log.Println("Body : ", data)
 	body := strings.NewReader(data)
 	rs.request, _ = http.NewRequest(method, url, body)
 	rs.client.Timeout = 10 * time.Second //默认10s
