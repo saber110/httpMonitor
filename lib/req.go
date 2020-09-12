@@ -52,6 +52,7 @@ func (r *req) SetHeader(header string) {
 		if len(val) != 2 {
 			continue
 		}
+		log.Println("Header: ", val[0], " " , val[1])
 		r.request.Header.Set(val[0], val[1])
 	}
 }
